@@ -1,0 +1,39 @@
+Assignment 3:- Recursive Ray Tracing
+
+To run the program follow the following steps
+
+1. cd into the directory of the project
+2. type make command
+3. type ./trace_ray   scene_file    an_integer_for_simple/recursive_ray_tracing    here scene file is the name of the scene file for which you want to create the object.
+
+For the argument for Single/Recursive Ray_Tracing  1 stands for Recursive Ray tracing with a depth of 3 and 0 or any other integer stands for single ray tracing 
+
+
+For Example
+
+For Single ray Tracing you can give the following command at the 3rd point
+
+./trace_ray spheres.scene 0
+	
+For Recursive Ray Tracing you can give the following command at the 3rd point.
+
+./trace_ray spheres.scene 1
+
+
+For the recursive ray tracing I am using the following formula
+
+final color = (1 - ks) * localPhongColor + ks * colorOfReflectedRay 
+
+
+Points to note down
+
+1. I have caclluted color at any pixel and stored it in its buffer posiion in the array unsignedchar buffer[HEIGHT][WIDTH][3].
+   Then I am displaying the colors at the screen in vertical lines of pixels. Please wait for some time after running the code to get the full images.
+3. All the functions written in the code have been properly commented before the definition with their arguments and functionality explained.
+
+Submitted By
+
+Prateek Garg
+P2008CS1024		
+
+
